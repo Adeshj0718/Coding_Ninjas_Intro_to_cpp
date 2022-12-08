@@ -23,10 +23,10 @@ column 2 25
 
 
 #include<climits>
-void findLargest(int arr[][1000], int row, int col){
+void findLargest(int**arr, int row, int col){
     	int i,j,sum = 0;
 	    int tempr = INT_MIN;
-	    int maxrow = 0, maxr = 0;
+	    int maxrow = INT_MIN, maxr = 0;
 	// finding each row sum 
 	for(i = 0; i < row; i++){ 
 		for (j = 0; j < col; j++) { 
@@ -45,7 +45,7 @@ void findLargest(int arr[][1000], int row, int col){
 	
 	i=0,j=0,sum = 0; 
 	int tempc = INT_MIN;
-	int maxcol = 0, maxc = 0;
+	int maxcol = INT_MIN, maxc = 0;
 	
 	// finding the each column sum 
 	for (i = 0; i < col; ++i) { 
